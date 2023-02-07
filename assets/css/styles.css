@@ -20,36 +20,34 @@ body::-webkit-scrollbar-thumb:hover{
 body{
     margin: 0;
     padding: 0;
-    width: 100%;
-    background-image: url("../img/fondo.jpg");
+    background-image: linear-gradient(rgb(0, 0, 0, 0.8),rgb(0, 0, 0, 0.8)), url("../img/fondo.jpg");
     background-size: cover;
     background-attachment: fixed;
     justify-content: center;
     align-items: center;
     position: relative;
-    display: grid;    
+    display: grid;
+    margin-right: 1%;
+    margin-left: 1%;
 }
 
 /*HEADER*/
 
 /*NavBar*/
 
-.navbar{    
-    --bs-bg-opacity: 0.2;
-    top: 0;
-    --bs-navbar-padding-y: 0.2rem;
-    --bs-navbar-brand-padding-y: 0.6rem;
-    z-index: 20;   
+.navbar{
+    --bs-bg-opacity: 0;
+    --bs-navbar-padding-y: 0.1rem;
+    --bs-navbar-brand-padding-y: 0.5rem; 
+    z-index: 20;
 }
 
 /*Nav scroll*/
 nav.translucido {
-    transition: 0.4s;
-    top: 0;    
-    --bs-navbar-padding-y: 0.08rem;
-    --bs-navbar-brand-padding-y: 0.45rem;       
+    transition: 0.5s;
+    --bs-navbar-padding-y: 0.05rem;
+    --bs-navbar-brand-padding-y: 0.3rem;    
     --bs-bg-opacity: 1;
-
 }
 
 /*Navbar Componentes*/
@@ -105,7 +103,10 @@ nav.translucido {
 
 .banner-img {
     width: 100%;
-    height: 75vh;
+    height: 30rem;
+    margin-top: 4rem;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
     position: relative;
 }
 
@@ -115,19 +116,20 @@ nav.translucido {
 
 /*MAIN*/
 
-.perfil{
+.perfil{    
     position: absolute;
     border-radius: 50%;
-    width: 14rem;
-    height: 14rem;
+    width: 12rem;
+    height: 12rem;
     z-index: 10;
-    bottom: -7rem;
+    bottom: -5rem;
     left: 4rem;
+    border: 7px solid #00050c;
 }
 
 /*Acerca de*/
 .bg-opacity{    
-    --bs-bg-opacity: 0.8;
+    --bs-bg-opacity: 0;
 }
 .acercade{
     position: relative;
