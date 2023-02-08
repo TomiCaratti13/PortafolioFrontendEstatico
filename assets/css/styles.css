@@ -27,8 +27,8 @@ body{
     align-items: center;
     position: relative;
     display: grid;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 2%;
+    margin-left: 2%;
 }
 
 /*HEADER*/
@@ -87,75 +87,82 @@ nav.translucido {
     --bs-btn-hover-bg: #152d50;
     --bs-btn-hover-border-color: #152d50;
     --bs-btn-active-bg: #1b3f74;
-    --bs-btn-active-border-color: #1b3f74;
+    --bs-btn-active-border-color: #1b3f74;    
+    --bs-border-width: 0;
     border-radius: 25px;
     width: 6rem;
-    --bs-border-width: 0;
 }
 
 .modal-footer {
     justify-content: center;
     padding: 0.5rem;
 }
+.form-control {
+    background-color: #e2e2e2;
+    border-radius: 0.8rem;
+}
 
 
 /*Banner*/
-
 .banner-img {
     width: 100%;
-    height: 30rem;
-    margin-top: 4rem;
-    border-top-right-radius: 20px;
-    border-top-left-radius: 20px;
+    height: 65vh;
+    margin-top: 8vh;
+    border-top-right-radius: 0.8rem;
+    border-top-left-radius: 0.8rem;
     position: relative;
+    border-bottom: 5px solid #00050c;;
 }
 
 .carousel-caption{
     z-index: 10;
+    margin-bottom: 8rem;
 }
 
 /*MAIN*/
 
 .perfil{    
     position: absolute;
-    border-radius: 50%;
-    width: 12rem;
-    height: 12rem;
+    width: 13rem;
+    height: 13rem;
     z-index: 10;
     bottom: -5rem;
-    left: 4rem;
-    border: 7px solid #00050c;
+    left: 6rem;
+    border: 5px solid #00050c;
 }
 
 /*Acerca de*/
 .bg-opacity{    
-    --bs-bg-opacity: 0;
+    --bs-bg-opacity: 0.6;
 }
 .acercade{
+    width: 100%;
+    height: 26vh;
     position: relative;
-    height: 30vh;
+    border-bottom-left-radius: 0.8rem;
+    border-bottom-right-radius: 0.8rem;
 }
 
 .experiencia{
-    height: 65vh;
+    margin-top: 5rem;
 }
 
 .educacion{
-    height: 65vh;
+    margin-top: 5rem;
 }
 
 .habilidades{
-    height: 65vh;
+    margin-top: 5rem;
 }
 
 .proyectos{
-    height: 65vh;
+    margin-top: 5rem;
 }
 
 /*FOOTER*/
 
 footer{
-    margin-top: 10px;
+    margin-top: 5rem;
     height: 15vh;
     background: #09182c;
 }
