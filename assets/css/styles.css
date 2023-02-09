@@ -20,13 +20,14 @@ body::-webkit-scrollbar-thumb:hover{
 body{
     margin: 0;
     padding: 0;
-    background-image: linear-gradient(rgb(0, 0, 0, 0.8),rgb(0, 0, 0, 0.8)), url("../img/fondo.jpg");
+    background-image: linear-gradient(rgb(0, 0, 0, 0.8),rgb(0, 0, 0, 0.8)), url("../img/fondo.png");
+    background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     justify-content: center;
     align-items: center;
     position: relative;
-    display: grid;
+    display: grid;    
     margin-right: 2%;
     margin-left: 2%;
 }
@@ -43,7 +44,7 @@ body{
 }
 
 /*Nav scroll*/
-nav.translucido {
+nav.obscuro{
     transition: 0.5s;
     --bs-navbar-padding-y: 0.05rem;
     --bs-navbar-brand-padding-y: 0.3rem;    
@@ -57,26 +58,29 @@ nav.translucido {
     --bs-list-group-border-width: none;
 }
 
-.fa-brands:hover{
-    transition: transform .2s;
-    transform: scale(1.3);
-}
-.fa-solid:hover{
-    transition: transform .2s;
-    transform: scale(1.3);
-}
-.fa-2x {
-    font-size: 1.4rem;
-}
-.fa-2 {
-    font-size: 1.2rem;
-}
 
 .LogoAP:hover{
     transition: transform .2s;
     transform: scale(1.25);
 }
 
+.fa-brands:hover{
+    transition: transform .2s;
+    transform: scale(1.3);
+}
+
+.fa-solid:hover{
+    transition: transform .2s;
+    transform: scale(1.3);
+}
+
+.fa-2x {
+    font-size: 1.4rem;
+}
+
+.fa-2 {
+    font-size: 1.2rem;
+}
 .dropdown-menu{
     --bs-dropdown-min-width: 0;
 }
@@ -111,7 +115,7 @@ nav.translucido {
     border-top-right-radius: 0.8rem;
     border-top-left-radius: 0.8rem;
     position: relative;
-    border-bottom: 5px solid #00050c;;
+    border-bottom: 5px solid #00050c;
 }
 
 .carousel-caption{
@@ -127,7 +131,7 @@ nav.translucido {
     height: 13rem;
     z-index: 10;
     bottom: -5rem;
-    left: 6rem;
+    left: 5rem;
     border: 5px solid #00050c;
 }
 
