@@ -13,10 +13,7 @@
     <title>Mi Portafolio</title>
 </head>
 <body>
-
-<!--Header-->
-    <header>
-
+    
     <!--Navbar-->        
         <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
             <div class="container-fluid">
@@ -44,9 +41,9 @@
                         <li class="list-group-item"><a href="https://linkedin.com" target="_bank"><i class="fa-brands fa-linkedin fa-2x text-white"></i></a></li>
                         <li class="list-group-item"><a href="https://instagram.com" target="_bank"><i class="fa-brands fa-instagram fa-2x text-white"></i></a></li>
                         <li class="list-group-item"><a href="https://facebook.com" target="_bank"><i class="fa-brands fa-facebook fa-2x text-white"></i></a></li>
-                        <!-- Boton login -->
-                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"    data-bs-target="#exampleModal">Acceder</button>
                     </ul>
+                    <!-- Boton login -->
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"    data-bs-target="#exampleModal">Acceder</button>
                 </div>
             </div>
         </nav>
@@ -79,88 +76,401 @@
             </div>
         </div>
 
-    </header>
+<!--Header-->
+    <header>
 
-<!--Main-->
-    <main>
+    <!--Seccion Acerca De-->
+        <section>
+            <div class="container-fluid text-white">
+                <div class="row gx-5">
+                    <div class="banner col-lg-12">
+                        <img src="assets/img/banner1.png" alt="custom-banner" class="img-fluid">
+                    </div>
+                </div>>
+                <div class="row gx-5">
+                    <div class="about-me col-lg-12 bg-dark">
+                        <div class="row gx-5">
+                            <div class="col-lg-5 justify-content-center position-relative">
+                                <img src="assets/img/perfil.png" alt="Username" class="img-fluid position-absolute translate-middle">
+                                <h1 id="dev-name">Tomás Rafael Caratti</h1>
+                                <h2 id="dev-title">Programador Web Full Stack Jr</h2>
+                            </div>
+                            <div class="col-lg-7 d-flex align-items-center">
+                                <div class="container-fluid about-me-description">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                                            <h3>Acerca de mí</h3>
+                                        </div>
+                                        <div class="col-lg-12">
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim quidem molestias nulla culpa quasi accusamus quod eum. Similique eos quibusdam error? Repellat, delectus excepturi. Praesentium eveniet rerum modi quidem? Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim quidem molestias nulla culpa quasi accusamus quod eum. Similique eos quibusdam error? Repellat, delectus excepturi. Praesentium eveniet rerum modi quidem?</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+	</header>
 
     <!--Seccion Banner-->
-        <section class="carousel">
+        <!--<section class="banner">
             <div>                
-                <img src="assets\img\banner1.png" class="banner-img" alt="banner">
+                <img src="..." class="img-fluid" alt="banner">
                 <div class="carousel-caption d-none d-md-block">
                     <p>¡Hola! Soy</p>
                     <h1>Tomás Rafael Caratti</h1>
                     <p>Programador Web Full Stack Jr</p>
                 </div>
             </div>
-            <a name="acercadelink"><img class="perfil rounded-circle" src="assets\img\perfil.png" alt="fotoperfil"><a>
-        </section>
-
+            <a name="acercadelink"><img class="perfil rounded-circle img-fluid position-absolute translate-middle" src="assets\img\perfil.png" alt="fotoperfil"><a>
+        </section>-->
     <!--Seccion Acerca De-->
-        <section class="acercade text-white bg-black bg-opacity">
-            <div class="row justify-content-end">
+        <!--<section class="acercade text-white bg-black bg-opacity">
+            <div class="row justify-content">
                 <div class="col-9">
                     <h3>Acerc de mi</h3>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sed iusto, repellat in   veritatis excepturi laudantium consequatur deserunt rerum asperiores consectetur ducimuseveniet   blanditiis dolorum magni dicta dolor, vitae eos!
                     Facere, nisi provident qui quaerat expedita eum! Perferendis placeat nihil nesciunt numquam,iusto  praesentium? Sint expedita optio error odio ullam laudantium quasi dignissimos, itaquedebitis   asperiores fugiat exercitationem nulla!</p>
                 </div>
             </div>
-        </section>
+        </section>-->
+
+<!--Main-->
+    <main>
 
     <!--Seccion Experiencia-->
         <section class="experiencia text-white bg-black bg-opacity">
             <div class="row justify-content">
-                <div class="col-9">
-                    <a name="experiencialink"><h3>Experiencia</h3></a>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sed iusto, repellat in veritatis excepturi laudantium consequatur deserunt rerum asperiores consectetur ducimus eveniet blanditiis dolorum magni dicta dolor, vitae eos!
-                    Facere, nisi provident qui quaerat expedita eum! Perferendis placeat nihil nesciunt numquam, iusto praesentium? Sint expedita optio error odio ullam laudantium quasi dignissimos, itaque debitis asperiores fugiat exercitationem nulla!</p>
+                <a name="experiencialink"><h3>Experiencia</h3></a>
+                <div class="col-4">                    
+                    <div class="card bg-dark" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">                    
+                    <div class="card bg-dark" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">                    
+                    <div class="card bg-dark" style="width: 20rem;">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <h6 class="card-subtitle mb-2">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
     <!--Seccion Educacion-->
         <section class="educacion text-white bg-black bg-opacity">
-            <div class="row justify-content-end">
-                <div class="col-9">
-                    <a name="educacionlink"><h3>Educación</h3></a>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sed iusto, repellat in veritatis excepturi laudantium consequatur deserunt rerum asperiores consectetur ducimus eveniet blanditiis dolorum magni dicta dolor, vitae eos!
-                    Facere, nisi provident qui quaerat expedita eum! Perferendis placeat nihil nesciunt numquam, iusto praesentium? Sint expedita optio error odio ullam laudantium quasi dignissimos, itaque debitis asperiores fugiat exercitationem nulla!</p>
+            <div class="row justify-content container">
+                <a name="educacionlink"><h3>Educación</h3></a>
+                <div class="col-4">                    
+                    <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="assets/img/programa.jpg" class="img-fluid rounded-start" alt="titulosecundario">
+                            </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Argentina Programa</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small>Mayo 2023</small></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-4">                    
+                    <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="assets/img/Bachi.png" class="img-fluid rounded-start" alt="titulosecundario">
+                            </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Titulo Secundario</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small>Diciembre 2019</small></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>                
+                </div>
+                <div class="col-4">                    
+                    <div class="card mb-3 bg-dark" style="max-width: 540px;">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                <img src="assets/img/utn.jpg" class="img-fluid rounded-start" alt="titulosecundario">
+                            </div>
+                                <div class="col-md-8">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Ingenieria Electromecanica</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                        <p class="card-text"><small>En camino</small></p>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>                
                 </div>
             </div>
         </section>
 
     <!--Seccion Habilidades-->
-        <section class="habilidades text-white bg-black bg-opacity">
-            <div class="row justify-content">
-                <div class="col-9">
-                    <a name="habilidadeslink"><h3>Habilidades</h3></a>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sed iusto, repellat inveritatis excepturi laudantium consequatur deserunt rerum asperiores consectetur ducimus evenietblanditiis dolorum magni dicta dolor, vitae eos!
-                    Facere, nisi provident qui quaerat expedita eum! Perferendis placeat nihil nesciunt numquam,iusto praesentium? Sint expedita optio error odio ullam laudantium quasi dignissimos, itaquedebitis asperiores fugiat exercitationem nulla!</p>
+        <section id="habilidades" class="section-info text-white bg-black bg-opacity">
+            <div class="container">
+                <div class="section-title">
+                    <div class="section-header d-flex justify-content-between align-items-center">
+                        <h2 class="fw-bold">Habilidades</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 mt-5">
+                        <div class="skills-header d-flex justify-content-between align-items-center">
+                            <h3 class="mb-3 fw-bold">Front-End</h3>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-container">
+                                <div class="item-title d-flex justify-content-between align-items-center">
+                                    <span class="fs-5"><i class="pe-2 fa-angular fa-brands"></i>Angular - TypeScript</span>
+                                </div>
+                                <div class="progress mb-3" style="height: 20px;">
+                                    <div role="progressbar" aria-valuemin="0" aria-valuenow="95" aria-valuemax="100" class="progress-bar bg-warning" style="width: 80%;">
+                                        Intermedio
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-container">
+                                <div class="item-title d-flex justify-content-between align-items-center">
+                                    <span class="fs-5"><i class="pe-2 fa-brands fa-js-square"></i>JavaScript</span>
+                                </div>
+                                <div class="progress mb-3" style="height: 20px;">
+                                    <div role="progressbar" aria-valuemin="0" aria-valuenow="95" aria-valuemax="100" class="progress-bar bg-warning" style="width: 70%;">
+                                        Intermedio 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-container">
+                                <div class="item-title d-flex justify-content-between align-items-center">
+                                    <span class="fs-5"><i class="pe-2 fa-bootstrap fa-brands"></i>Bootstrap - CSS</span>
+                                </div>
+                                <div class="progress mb-3" style="height: 20px;">
+                                    <div role="progressbar" aria-valuemin="0" aria-valuenow="95" aria-valuemax="100" class="progress-bar bg-warning" style="width: 65%;">
+                                        Intermedio 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-container">
+                                <div class="item-title d-flex justify-content-between align-items-center">
+                                    <span class="fs-5"><i class="pe-2 fa-brands fa-html5"></i>HTML</span>
+                                </div>
+                                <div class="progress mb-3" style="height: 20px;">
+                                    <div role="progressbar" aria-valuemin="0" aria-valuenow="95" aria-valuemax="100" class="progress-bar bg-warning" style="width: 85%;">
+                                        Avanzado 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                    
+                    <div class="col-lg-4 mt-5">
+                        <div class="skills-header d-flex justify-content-between align-items-center">
+                            <h3 class="mb-3 fw-bold">Back-End</h3>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-container">
+                                <div class="item-title d-flex justify-content-between align-items-center">
+                                    <span class="fs-5"><i class="pe-2 fa-brands fa-java"></i>Spring Boot - Java</span>
+                                </div>
+                                <div class="progress mb-3" style="height: 20px;">
+                                    <div role="progressbar" aria-valuemin="0" aria-valuenow="95" aria-valuemax="100" class="progress-bar bg-info" style="width: 70%;"> Intermedio 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-container">
+                                <div class="item-title d-flex justify-content-between align-items-center">
+                                    <span class="fs-5"><i class="pe-2 fa-database fa-solid"></i>MySQL</span>
+                                </div>
+                                <div class="progress mb-3" style="height: 20px;">
+                                    <div role="progressbar" aria-valuemin="0" aria-valuenow="95" aria-valuemax="100" class="progress-bar bg-info" style="width: 45%;"> Básico 
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 mt-5">
+                        <div class="skills-header d-flex justify-content-between align-items-center">
+                            <h3 class="mb-3 fw-bold">Soft-Skills</h3>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-container">
+                                <div class="item-title d-flex justify-content-between align-items-center">
+                                    <span class="fs-5">skill</span>
+                                </div>
+                                <div class="progress mb-3" style="height: 20px;">
+                                    <div role="progressbar" aria-valuemin="0" aria-valuenow="95" aria-valuemax="100" class="progress-bar bg-success" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-container">
+                                <div class="item-title d-flex justify-content-between align-items-center">
+                                    <span class="fs-5">skill</span>
+                                </div>
+                                <div class="progress mb-3" style="height: 20px;">
+                                    <div role="progressbar" aria-valuemin="0" aria-valuenow="95" aria-valuemax="100" class="progress-bar bg-success" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-container">
+                                <div class="item-title d-flex justify-content-between align-items-center">
+                                    <span class="fs-5">skill</span>
+                                </div>
+                                <div class="progress mb-3" style="height: 20px;">
+                                    <div role="progressbar" aria-valuemin="0" aria-valuenow="95" aria-valuemax="100" class="progress-bar bg-success" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-container">
+                                <div class="item-title d-flex justify-content-between align-items-center">
+                                    <span class="fs-5">skill</span>
+                                </div>
+                                <div class="progress mb-3" style="height: 20px;">
+                                    <div role="progressbar" aria-valuemin="0" aria-valuenow="95" aria-valuemax="100" class="progress-bar bg-success" style="width: 100%;">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
 
     <!--Seccion Proyectos-->
         <section class="proyectos text-white bg-black bg-opacity">
-            <div class="row justify-content-end">
-                <div class="col-9">
-                    <a name="proyectoslink"><h3>Proyectos</h3></a>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt sed iusto, repellatinveritatis excepturi laudantium consequatur deserunt rerum asperiores consectetur ducimusevenietblanditiis dolorum magni dicta dolor, vitae eos!
-                    Facere, nisi provident qui quaerat expedita eum! Perferendis placeat nihil nesciunt numquamiusto praesentium? Sint expedita optio error odio ullam laudantium quasi dignissimos,itaquedebitis asperiores fugiat exercitationem nulla!</p>
+            <div class="row justify-content container">
+                <a name="proyectoslink"><h3>Proyectos</h3></a>
+                <div class="col-3">                    
+                    <div class="card bg-dark" style="width: 18rem;">
+                        <img src="assets/img/Plan.jpg" class="card-img-top" alt="portafolioweb">
+                        <div class="card-body">
+                            <h5 class="card-title">Portafolio</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                            <ul class="list-group list-group-horizontal">
+                                <li class="list-group-item"><a href="#" target="_bank"><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
+                                <li class="list-group-item"><a href="#" target="_bank"><i class="fa-solid fa-file-code fa-2x text-white"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card bg-dark" style="width: 18rem;">
+                        <img src="assets/img/images.jpeg" class="card-img-top" alt="fabricaweb">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Fabrica</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                            <ul class="list-group list-group-horizontal">
+                                <li class="list-group-item"><a href="#" target="_bank"><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
+                                <li class="list-group-item"><a href="#" target="_bank"><i class="fa-solid fa-file-code fa-2x text-white"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card bg-dark" style="width: 18rem;">
+                        <img src="assets/img/depto.jpg" class="card-img-top" alt="departamentosweb">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Departamentos</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                            <ul class="list-group list-group-horizontal">
+                                <li class="list-group-item"><a href="#" target="_bank"><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
+                                <li class="list-group-item"><a href="#" target="_bank"><i class="fa-solid fa-file-code fa-2x text-white"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="card  bg-dark" style="width: 18rem;">
+                        <img src="assets/img/chacinados.jpg" class="card-img-top" alt="chasinadosweb">
+                        <div class="card-body">
+                            <h5 class="card-title">Web Chasinados</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content</p>
+                            <ul class="list-group list-group-horizontal">
+                                <li class="list-group-item"><a href="#" target="_bank"><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
+                                <li class="list-group-item"><a href="#" target="_bank"><i class="fa-solid fa-file-code fa-2x text-white"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+    <!--Seccion Contacto-->
+        <section id="contacto" class="section-info text-white">
+            <div class="container">
+                <div class="section-title">
+                    <div class="section-header d-flex justify-content-between align-items-center">
+                        <h2 class="fw-bold">Contacto</h2>
+                    </div>
+                    <div class="row d-flex justify-content-center flex-row card bg-dark">
+                        <div class="col-lg-6">
+                            <h3 class="text-center">Contactame</h3>
+                            <form novalidate="" id="contactForm" autocomplete="off" class="form">
+                                <div class="mb-3">
+                                    <label for="contactName" class="form-label fw-bold">Nombre:</label>
+                                    <input id="contactName" name="contactName" type="text" placeholder="Ej: Elon Musk" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Utiliza únicamente letras y espacios en blanco." required="" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactEmail" class="form-label fw-bold">E-Mail:</label>
+                                    <input id="contactEmail" name="contactEmail" type="email" placeholder="Ej: ejemplo@gmail.com" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Introduce un correo electrónico válido." required="" class="form-control">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="contactComment" class="form-label fw-bold">Mensaje:</label>
+                                    <textarea id="contactComment" name="contactComment" cols="30" rows="3" contactcomment="" placeholder="¡Dejame un mensaje!" required="" class="form-control" style="resize: none;"></textarea>
+                                </div>
+                                <div class="mb-3 text-center">
+                                    <button type="submit" class="btn btn-outline-info mt-3" disabled="">¡Enviar!</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
 <!--Footer-->
     <footer>
         <section>
-            <p class="text-white text-center"><i>&copy; Tomás Caratti 2023</i></p>
+            <p class="text-white text-center"><i>&copy;Tomás Caratti 2023</i></p>
         </section>
-    </footer>
-
-    
+    </footer>    
 
     <!--JavaScript Bundle with Popper-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
