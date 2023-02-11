@@ -20,7 +20,6 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    justify-content: center;
     align-items: center;
     position: relative;
     display: grid;
@@ -29,8 +28,8 @@ body{
 /*NavBar*/
 
 .navbar{
-    --bs-navbar-padding-y: 0.2rem;
-    --bs-navbar-brand-padding-y: 0.5rem; 
+    --bs-navbar-padding-y: 0.3rem;
+    --bs-navbar-brand-padding-y: 0.6rem; 
     z-index: 20;
 }
 
@@ -85,112 +84,68 @@ body{
 }
 
 /*Header*/
+.banner{
+    width: 100%;
+    height: 55vh;
+    margin-top: 9vh;
+    position: relative;
+}
 
 .banner img {
 	width: 100%;
-	object-fit: cover;
-
 }
-/*.banner{
-	padding: 0 !important;
-	position:relative;
-	height: 40vh;
-	width: 100%;
-}*/
+
+/*Acerca de*/
+
+.bg-opacity{    
+    --bs-bg-opacity: 0;
+}
 
 .about-me{
+    width: 100%;
 	position: relative;
 	text-align: center;
 }
 .about-me img{
 	border-radius: 50%;
-	width: 14rem;
-	height: 14rem;
+	width: 18rem;
+	height: 18rem;
+    margin-top: -2rem;
 	position: relative;
-	/*top: -40%; */
-	border: 5px solid #00050c;
+	border: 5px solid #d4d4d4;
 }
 
-/*Acerca de*/
-.bg-opacity{    
-    --bs-bg-opacity: 0.5;
-}
-.acercade{
-    width: 100%;
-}
 .about-me h1 {
-	padding-top: 190px;
+	padding-top: 22vh;
 }
 
-.about-me-description{
+.descripcion{
 	padding: 2%;
 	border: 1px solid rgba(0,0,0,.5);
 	border-radius: 10px;
 }
-.about-me-description h3{
-	font-weight: 400;
+
+.descripcion h3{
 	font-size: 2.5em;
 }
 
-
-/*Banner*/
-
-.banner{    
-	padding: 0 !important;
-    width: 100%;
-    height: 60vh;
-    margin-top: 8vh;
-    position: relative;
-}
-
-/*.carousel-caption{
-    z-index: 10;
-    margin-bottom: 8rem;
-}*/
-
 /*MAIN*/
 
-/*.perfil{    
-    position: absolute;
-    width: 13rem;
-    height: 13rem;
-    z-index: 10;
-    bottom: -5rem;
-    left: 5rem;
-    border: 5px solid #00050c;
-}*/
-
-/*Acerca de*/
-.bg-opacity{    
-    --bs-bg-opacity: 0;
+.cvitae button{
+    width: 10rem;
+    height: 3rem;
+    margin-top: 8rem;
+    border: none;
+    background-color: #09182c;
+    border-radius: 25px;
 }
 
-/*.acercade{
-    width: 100%;
-    height: 26vh;
-    position: relative;
-    border-bottom-left-radius: 0.8rem;
-    border-bottom-right-radius: 0.8rem;
-}*/
-
-.experiencia{
-    margin-top: 15rem;
+#contacto,#proyectos, #educacion, #experiencia{    
+    margin-top: 14rem;
 }
 
-.educacion{
-    margin-top: 15rem;
-}
-
-.habilidades{
-    margin-top: 15rem;
-}
-
-section.proyectos{
-    margin-top: 15rem;
-}
-
-section.section-info{
-    margin-top: 15rem;
+#habilidades{
+    margin-top: 6rem;
 
 }
 
