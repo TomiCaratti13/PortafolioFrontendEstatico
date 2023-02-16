@@ -15,14 +15,14 @@
 <body>
     
     <!--Navbar-->        
-        <nav class="navbar navbar-expand-lg navbar-dark bg-black fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container-fluid">
                 <a class="navbar-brand" href="https://argentinaprograma.inti.gob.ar/" target="_bank"><img class="LogoAP"    src="assets\img\LogoAP.png" alt="Logo ArgPrograma" class="w-100%"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house-user fa-2"></i></a></li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contenido</a>
@@ -39,14 +39,15 @@
                     <ul class="list-group list-group-horizontal">
                         <li class="list-group-item"><a href="https://github.com" target="_bank"><i class="fa-brands fa-github fa-2x text-white"></i></a></li>
                         <li class="list-group-item"><a href="https://linkedin.com" target="_bank"><i class="fa-brands fa-linkedin fa-2x text-white"></i></a></li>
-                        <li class="list-group-item"><a href="https://instagram.com" target="_bank"><i class="fa-brands fa-instagram fa-2x text-white"></i></a></li>
-                        <li class="list-group-item"><a href="https://facebook.com" target="_bank"><i class="fa-brands fa-facebook fa-2x text-white"></i></a></li>
+                        <!--<li class="list-group-item"><a href="https://instagram.com" target="_bank"><i class="fa-brands fa-instagram fa-2x text-white"></i></a></li>
+                        <li class="list-group-item"><a href="https://facebook.com" target="_bank"><i class="fa-brands fa-facebook fa-2x text-white"></i></a></li>-->
                     </ul>
                     <!-- Boton login -->
-                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"    data-bs-target="#exampleModal">Acceder</button>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"data-bs-target="#exampleModal">Acceder</button>
                 </div>
             </div>
         </nav>
+    <!--Fin Navbar--> 
 
     <!-- Ventana login -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -75,24 +76,31 @@
                 </div>
             </div>
         </div>
+    <!--Fin Ventana login -->
 
 <!--Header-->
     <header>
 
+    <!--Seccion Banner-->
+        <section name="acercade">
+            <div class="banner">
+                <img src="assets/img/banner.png" alt="bannerimg">
+            </div>
+        </section>
+    <!--Fin Seccion Banner-->
+
     <!--Seccion Acerca De-->
-        <section class="container-fluid">
-            <div class="text-white">
+        <section id="acercade">
+            <div class=" container-fluid text-white">
                 <div class="row">
-                    <div class="banner col-lg-12">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="about-me col-lg-12 bg-dark">
+                    <div class="about-me col-lg-12">
                         <div class="row">
                             <div class="col-lg-5 justify-content-between position-relative">
-                                <img src="assets/img/perfil.png" alt="Username" class="img-fluid position-absolute translate-middle">
-                                <h1 id="dev-name">Tomás Rafael Caratti</h1>
-                                <h2 id="dev-title">Programador Web Full Stack Jr</h2>
+                                <img src="assets/img/perfil.png" alt="Username" class="img-fluid position-absolute translate-middle perfil">
+                                <div class="informacion">
+                                    <h1 id="dev-name" class="fw-bold">Tomás Rafael Caratti</h1>
+                                    <h2 id="dev-title">Programador Web Full Stack Jr</h2>
+                                </div>
                             </div>
                             <div class="col-lg-7 d-flex align-items-center">
                                 <div class="descripcion">
@@ -111,106 +119,119 @@
                 </div>
             </div>
         </section>
+    <!--Fin Seccion Acerca De-->
+
 	</header>
+<!--Fin Header-->
 
 <!--Main-->
     <main>
 
     <!--Seccion Experiencia-->
-        <section id="experiencia" class="container-fluid text-white bg-black bg-opacity">
-            <div class="row justify-content-between">
+        <section id="experiencia" class="text-white bg-black bg-opacity">
+            <div class="container section-container row justify-content-between">
                 <a name="experiencialink"><h2 class="fw-bold">Experiencia</h2></a>
-                <div class="col-4">                    
-                    <div class="card bg-dark">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <ul>
+                    <li class="col-4">                    
+                        <div class="card bg-dark">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-4">                    
-                    <div class="card bg-dark">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </li>
+                    <li class="col-4">                    
+                        <div class="card bg-dark">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-4">                    
-                    <div class="card bg-dark">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <h6 class="card-subtitle mb-2">Card subtitle</h6>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </li>
+                    <li class="col-4">                    
+                        <div class="card bg-dark">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <h6 class="card-subtitle mb-2">Card subtitle</h6>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>
             </div>
         </section>
+    <!--Fin Seccion Experiencia-->
 
     <!--Seccion Educacion-->
-        <section id="educacion" class="container-fluid text-white bg-black bg-opacity">
-            <div class="row justify-content-between">
-                <a name="educacionlink"><h2 class="fw-bold">Educación</h2></a>
-                <div class="col-4">                    
-                    <div class="card mb-3 bg-dark">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="assets/img/programa.jpg" class="img-fluid rounded-start" alt="titulosecundario">
-                            </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Argentina Programa</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small>Mayo 2023</small></p>
+        <section id="educacion" class="text-white bg-black bg-opacity">
+            <div class="container section-container">
+                <div class="row gx-5">
+                    <div class="panel col-lg-12">
+                        <h2 class="section-title">EDUCACION</h2>
+                        <div class="card-group row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                            <div class="col">                    
+                                <div class="card mb-3 bg-dark">
+                                    <div class="row g-0">
+                                        <div class="col">
+                                            <img src="assets/img/programa.jpg" class="img-fluid rounded-start" alt="titulosecundario">
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Argentina Programa</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <p class="card-text"><small>Mayo 2023</small></p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                        </div>
-                    </div>                
-                </div>
-                <div class="col-4">                    
-                    <div class="card mb-3 bg-dark">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="assets/img/Bachi.png" class="img-fluid rounded-start" alt="titulosecundario">
                             </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Titulo Secundario</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small>Diciembre 2019</small></p>
+                            <div class="col">                    
+                                <div class="card mb-3 bg-dark">
+                                    <div class="row g-0">
+                                        <div class="col">
+                                            <img src="assets/img/programa.jpg" class="img-fluid rounded-start" alt="titulosecundario">
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Argentina Programa</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <p class="card-text"><small>Mayo 2023</small></p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                        </div>
-                    </div>                
-                </div>
-                <div class="col-4">                    
-                    <div class="card mb-3 bg-dark">
-                        <div class="row g-0">
-                            <div class="col-md-4">
-                                <img src="assets/img/utn.jpg" class="img-fluid rounded-start" alt="titulosecundario">
                             </div>
-                                <div class="col-md-8">
-                                    <div class="card-body">
-                                        <h5 class="card-title">Ingenieria Electromecanica</h5>
-                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <p class="card-text"><small>En camino</small></p>
+                            <div class="col">                    
+                                <div class="card mb-3 bg-dark">
+                                    <div class="row g-0">
+                                        <div class="col">
+                                            <img src="assets/img/programa.jpg" class="img-fluid rounded-start" alt="titulosecundario">
+                                        </div>
+                                        <div class="col">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Argentina Programa</h5>
+                                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                                <p class="card-text"><small>Mayo 2023</small></p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                            </div>  
                         </div>
-                    </div>                
+                    </div>
                 </div>
             </div>
             <div class="text-center cvitae">
                 <button class="text-white fw-bold">Descargar CV</button>
             </div>
         </section>
+    <!--Fin Seccion Educacion-->
 
     <!--Seccion Habilidades-->
         <section id="habilidades" class="text-white bg-black bg-opacity">
-            <div class="container">
+            <div class="container section-container">
                 <div class="section-title">
                     <div class="section-header d-flex justify-content-between align-items-center">
                         <h2 class="fw-bold">Habilidades</h2>
@@ -349,13 +370,15 @@
                 </div>
             </div>
         </section>
+    <!--Fin Seccion Habilidades-->
 
     <!--Seccion Proyectos-->
-        <section id="proyectos" class="container-fluid text-white bg-black bg-opacity">
+        <section id="proyectos" class="text-white bg-black bg-opacity">
+            <div class="container section-container">
             <div class="row justify-content-between">
                 <a name="proyectoslink"><h3 class="fw-bold">Proyectos</h3></a>
-                <div class="col-3">                    
-                    <div class="card bg-dark">
+                <div class="col-3">
+                    <div class="card card-proyecto bg-dark">
                         <img src="assets/img/Plan.jpg" class="card-img-top" alt="portafolioweb">
                         <div class="card-body">
                             <h5 class="card-title">Portafolio</h5>
@@ -368,7 +391,7 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card bg-dark">
+                    <div class="card card-proyecto bg-dark">
                         <img src="assets/img/images.jpeg" class="card-img-top" alt="fabricaweb">
                         <div class="card-body">
                             <h5 class="card-title">Web Fabrica</h5>
@@ -381,7 +404,7 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card bg-dark">
+                    <div class="card card-proyecto bg-dark">
                         <img src="assets/img/depto.jpg" class="card-img-top" alt="departamentosweb">
                         <div class="card-body">
                             <h5 class="card-title">Web Departamentos</h5>
@@ -394,7 +417,7 @@
                     </div>
                 </div>
                 <div class="col-3">
-                    <div class="card  bg-dark">
+                    <div class=" card card-proyecto bg-dark">
                         <img src="assets/img/chacinados.jpg" class="card-img-top" alt="chasinadosweb">
                         <div class="card-body">
                             <h5 class="card-title">Web Chasinados</h5>
@@ -407,7 +430,15 @@
                     </div>
                 </div>
             </div>
+        </div>
         </section>
+    <!--Fin Seccion Proyectos-->
+
+    </main>
+<!--Fin Main-->
+
+<!--Footer-->
+    <footer>
 
     <!--Seccion Contacto-->
         <section id="contacto" class="text-white">
@@ -421,15 +452,15 @@
                         <form novalidate="" id="contactForm" autocomplete="off" class="form">
                             <div class="mb-3">
                                 <label for="contactName" class="form-label fw-bold">Nombre:</label>
-                                <input id="contactName" name="contactName" type="text" placeholder="Ej: Elon Musk" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Utiliza únicamente letras y espacios en blanco." required=""class="form-control">
+                                <input id="contactName" name="contactName" type="text" placeholder="Ej: Tomás Caratti" pattern="    [A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Utiliza únicamente letras y espacios en blanco." required=""class="form-control">
                             </div>
                             <div class="mb-3">
                                 <label for="contactEmail" class="form-label fw-bold">E-Mail:</label>
-                                <input id="contactEmail" name="contactEmail" type="email" placeholder="Ej: ejemplo@gmail.com" pattern="^(\+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Introduce un correo electrónico válido." required=""class="form-control">
+                                <input id="contactEmail" name="contactEmail" type="email" placeholder="Ej: ejemplo@gmail.com" pattern="^(\+[/./-]?) {1,}@[a-z]+[/.]\w{2,}$" title="Introduce un correo electrónico válido." required=""class="form-control">
                             </div>
                             <div class="mb-3">
                                 <label for="contactComment" class="form-label fw-bold">Mensaje:</label>
-                                <textarea id="contactComment" name="contactComment" cols="30" rows="3" contactcomment=""placeholder="¡Dejame un mensaje!" required="" class="form-control" style="resize: none;"></textarea>
+                                <textarea id="contactComment" name="contactComment" cols="30" rows="3" contactcomment=""placeholder="¡Dejame un     mensaje!" required="" class="form-control" style="resize: none;"></textarea>
                             </div>
                             <div class="mb-3 text-center">                              
                                 <button type="submit" class="btn btn-primary mt-3" disabled="">Enviar</button>
@@ -439,14 +470,15 @@
                 </div>
             </div>
         </section>
-    </main>
+    <!--Fin Seccion Contacto-->
 
-<!--Footer-->
-    <footer>
         <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d32473.634442115566!2d-68.3513821492261!3d-34.59338141994471!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9679085c2536a5ad%3A0xa758283b991a1a6a!2sEl%20Cha%C3%B1aral%201625%2C%20Mendoza!5e0!3m2!1ses-419!2sar!4v1676563607683!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <p class="text-white text-center"><i>&copy;Tomás Caratti 2023</i></p>
         </section>
-    </footer>    
+
+    </footer>
+<!--Fin Footer-->
 
     <!--JavaScript Bundle with Popper-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>

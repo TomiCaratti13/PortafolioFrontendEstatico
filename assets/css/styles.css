@@ -1,11 +1,17 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /*Scrollbar*/
 
 body::-webkit-scrollbar{
-    width: 8px;
+    width: 12px;
     background-color: #000;
 }
 body::-webkit-scrollbar-thumb{
-    width: 8px;
+    width: 1x;
     background-color: #09182c;
     border-radius: 5px;
 }
@@ -15,14 +21,13 @@ body::-webkit-scrollbar-thumb:hover{
 
 /*BODY*/
 
-body{
+main{
     background-image: linear-gradient(rgb(0, 0, 0, 0.85),rgb(0, 0, 0, 0.85)), url("../img/fondo.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     align-items: center;
     position: relative;
-    display: grid;
 }
 
 /*NavBar*/
@@ -31,6 +36,13 @@ body{
     --bs-navbar-padding-y: 0.3rem;
     --bs-navbar-brand-padding-y: 0.6rem; 
     z-index: 20;
+    background-color: #000109;
+}
+
+.navbar-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
 }
 
 /*Navbar Componentes*/
@@ -45,17 +57,17 @@ body{
 }
 .fa-brands:hover{
     transition: transform .2s;
-    transform: scale(1.3);
+    transform: scale(1.5);
 }
 .fa-solid:hover{
     transition: transform .2s;
-    transform: scale(1.3);
+    transform: scale(1.55);
 }
 .fa-2x {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 .fa-2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 .dropdown-menu{
     --bs-dropdown-min-width: 0;
@@ -86,13 +98,19 @@ body{
 /*Header*/
 .banner{
     width: 100%;
-    height: 55vh;
-    margin-top: 9vh;
+    height: 56vh;
+    margin-top: 8.4vh;
     position: relative;
+    background-color: #000109;
 }
 
 .banner img {
-	width: 100%;
+    margin-top: -0.5rem;
+    width: 100%;
+    height: 58vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.5;
 }
 
 /*Acerca de*/
@@ -105,24 +123,28 @@ body{
     width: 100%;
 	position: relative;
 	text-align: center;
+    background-color: #000109;
 }
-.about-me img{
+.perfil{
 	border-radius: 50%;
 	width: 18rem;
 	height: 18rem;
-    margin-top: -2rem;
+    margin-top: -1rem;
 	position: relative;
-	border: 5px solid #d4d4d4;
+	border: 5px solid #000109;
 }
 
-.about-me h1 {
-	padding-top: 22vh;
+.informacion h1 {
+	padding-top: 20vh;
+}
+.informacion h2 {
+	padding-bottom: 4vh;
 }
 
 .descripcion{
 	padding: 2%;
-	border: 1px solid rgba(0,0,0,.5);
-	border-radius: 10px;
+	border: 1px solid #ffffff10;
+	border-radius: 25px;
 }
 
 .descripcion h3{
@@ -130,6 +152,15 @@ body{
 }
 
 /*MAIN*/
+
+.section-container{
+    padding: 5%;
+    border-radius: 25px;
+    background-color: rgba(255, 255, 255, .1);    
+    backdrop-filter: blur(0.3rem);
+    z-index: -10;
+}
+
 
 .cvitae button{
     width: 10rem;
@@ -140,19 +171,22 @@ body{
     border-radius: 25px;
 }
 
-#contacto,#proyectos, #educacion, #experiencia{    
-    margin-top: 14rem;
+main>section{
+    padding: 6rem 0;
+    margin: auto;
 }
 
-#habilidades{
-    margin-top: 6rem;
+.card-proyecto{
+    transition: .4s;
+}
 
+.card-proyecto:hover{    
+    transform: scale(1.3);
+    z-index: 10;
 }
 
 /*FOOTER*/
 
 footer{
-    margin-top: 5rem;
-    height: 15vh;
-    background: #09182c;
+    background: #000109;
 }
