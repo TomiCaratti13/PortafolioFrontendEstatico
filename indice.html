@@ -17,7 +17,7 @@
 <body>
 
     <!-- ============= Inicio HEADER ============== -->
-    <header>
+    <header id="inicio">
 
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
@@ -32,12 +32,12 @@
                 <div class="collapse navbar-collapse" id="NavBarCollapse">
                     <!-- Navbar menu -->
                     <ul class="navbar-nav mx-auto menu">
-                        <li><a class="nav-item nav-link active align-items-center" aria-current="page" href="#"><i class="fa-solid fa-house"></i>Inicio</a></li>
-                        <li><a class="nav-item nav-link align-items-center" href="#acercade"><i class="fa-solid fa-user"></i>Acerca de mí</a></li>
-                        <li><a class="nav-item nav-link align-items-center" href="#curriculum"><i class="fa-solid fa-file"></i>Curriculum</a></li>
-                        <li><a class="nav-item nav-link align-items-center" href="#habilidades"><i class="fa-solid fa-network-wired"></i>Habilidades</a></li>
-                        <li><a class="nav-item nav-link align-items-center" href="#proyectos"><i class="fa-solid fa-file-code"></i>Proyectos</a></li>
-                        <li><a class="nav-item nav-link align-items-center" href="#contacto"><i class="fa fa-envelope-open-text"></i>Contacto</a></li>
+                        <li><a class="nav-item nav-link active" href="#inicio"><i class="fa-solid fa-house"></i>Inicio</a></li>
+                        <li><a class="nav-item nav-link" href="#acercade"><i class="fa-solid fa-user"></i>Acerca de mí</a></li>
+                        <li><a class="nav-item nav-link" href="#curriculum"><i class="fa-solid fa-file"></i>Curriculum</a></li>
+                        <li><a class="nav-item nav-link" href="#habilidades"><i class="fa-solid fa-network-wired"></i>Habilidades</a></li>
+                        <li><a class="nav-item nav-link" href="#proyectos"><i class="fa-solid fa-file-code"></i>Proyectos</a></li>
+                        <li><a class="nav-item nav-link" href="#contacto"><i class="fa fa-envelope-open-text"></i>Contacto</a></li>
                     </ul>
                     <!-- Boton login -->
                     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#loginModal">Login<i class="fa-solid fa-user-lock icon-p"></i></button>
@@ -58,7 +58,7 @@
         <!-- SECCIÓN AcercaDe -->
         <section id="acercade" class="acerca-de">
             <!-- Perfil -->
-            <div class="row m-0 p-0 container-fluid text-white justify-content-between">
+            <div class="row m-0 p-0 container-fluid text-white justify-content-center">
                 <div class="col-lg-5 position-relative">
                     <img src="assets/img/perfil.png" alt="fotoperfil" class="img-fluid position-absolute translate-middle perfil">
                     <div class="informacion">
@@ -71,13 +71,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7 d-flex">
-                    <div class="descripcion align-items-center">
-                        <div class="row text-lg-start">
-                            <!-- Descripción -->
-                            <h2>Acerca de mí</h2>
-                            <p><span>¡Hola!</span> Soy Tomás Caratti, lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim quidem molestias nulla culpa quasi accusamus quod eum. Similique eos quibusdam error? Repellat, delectus excepturi. Praesentium eveniet rerum modi quidem? Lorem ipsum dolor sit amet  adipisicing elit. Distinctio enim quidem molestias nulla culpa quasi accusamus quod eum. Similique eos quibusdam error? Repellat, delectus excepturi.</p>
-                        </div>
+                <div class="col-lg-7 position-relative">
+                    <div class="descripcion align-items-center text-lg-start">
+                        <!-- Descripción -->
+                        <h2 class="mt-lg-5 mx-md-auto" >Acerca de mí</h2>
+                        <p><span>¡Hola!</span> Soy Tomás Caratti, lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio enim quidem molestias nulla culpa quasi accusamus quod eum. Similique eos quibusdam error? Repellat, delectus excepturi. Praesentium eveniet rerum modi quidem?</p>
+                        
                     </div>
                 </div>
             </div>
@@ -297,51 +296,92 @@
             <div class="row m-0 p-0 container-fluid justify-content-center text-white">
                 <h2 class="text-center">Proyectos</h2>
                 <div class="proyecto">
+
                     <!-- Proyecto 1 -->
-                    <div class="tarjeta">
-                        <img src="assets/img/portafolio.jpg" alt="portafolioweb">
-                        <div class="tar-cuerpo">
-                            <h5>Portafolio</h5>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
-                            <div class="d-flex justify-content-around repo">
-                                <a href="#" target="_bank"><i class="fa-brands fa-github fa-2x text-white"></i></a>
-                                <a href="#" target="_bank"><i class="fa-solid fa-up-right-from-square fa-2x text-white"></i></a>
+                    <div class="col-lg-4 col-md-5 col-sm-8 tarjeta">
+                        <div class="tar-head">
+                            <div class="head-img">
+                                <img src="assets/img/portafolio.jpg" alt="portafolioweb">
+                            </div>
+                            <div class="head-proy">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <div class="proy-titulo">
+                                    <h4>Proyecto</h4>
+                                    <h6>Tomás Caratti</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tar-body">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, odit aspernatur quod natus quaerat exercitationem.</p>
+                            <div class="repo-live">
+                                <a href="#" target="_bank"><i class="fa-solid fa-up-right-from-square"></i>LIVE DEMO</a>
+                                <a href="#" target="_bank"><i class="fa-brands fa-github"></i>REPOSITORIO</a>                                
                             </div>
                         </div>
                     </div>
                     <!-- Proyecto 2 -->
-                    <div class="tarjeta">
-                        <img src="assets/img/empresa.jpeg" alt="portafolioweb">
-                        <div class="card-body">
-                            <h5>Portafolio</h5>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
-                            <div class="d-flex justify-content-around">
-                                <a href="#" target="_bank"><i class="fa-brands fa-github fa-2x text-white"></i></a>
-                                <a href="#" target="_bank"><i class="fa-solid fa-up-right-from-square fa-2x text-white"></i></a>
+                    <div class="col-lg-4 col-md-5 col-sm-8 tarjeta">
+                        <div class="tar-head">
+                            <div class="head-img">
+                                <img src="assets/img/empresa.jpeg" alt="portafolioweb">
+                            </div>
+                            <div class="head-proy">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <div class="proy-titulo">
+                                    <h4>Proyecto</h4>
+                                    <h6>Tomás Caratti</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tar-body">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, odit aspernatur quod natus quaerat exercitationem.</p>
+                            <div class="repo-live">
+                                <a href="#" target="_bank"><i class="fa-solid fa-up-right-from-square"></i>LIVE DEMO</a>
+                                <a href="#" target="_bank"><i class="fa-brands fa-github"></i>REPOSITORIO</a>                                
                             </div>
                         </div>
                     </div>
                     <!-- Proyecto 3 -->
-                    <div class="tarjeta">
-                        <img src="assets/img/chacinados.jpg" alt="portafolioweb">
-                        <div class="card-body">
-                            <h5>Portafolio</h5>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
-                            <div class="d-flex justify-content-around">
-                                <a href="#" target="_bank"><i class="fa-brands fa-github fa-2x text-white"></i></a>
-                                <a href="#" target="_bank"><i class="fa-solid fa-up-right-from-square fa-2x text-white"></i></a>
+                    <div class="col-lg-4 col-md-5 col-sm-8 tarjeta">
+                        <div class="tar-head">
+                            <div class="head-img">
+                                <img src="assets/img/chacinados.jpg" alt="portafolioweb">
+                            </div>
+                            <div class="head-proy">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <div class="proy-titulo">
+                                    <h4>Proyecto</h4>
+                                    <h6>Tomás Caratti</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tar-body">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, odit aspernatur quod natus quaerat exercitationem.</p>
+                            <div class="repo-live">
+                                <a href="#" target="_bank"><i class="fa-solid fa-up-right-from-square"></i>LIVE DEMO</a>
+                                <a href="#" target="_bank"><i class="fa-brands fa-github"></i>REPOSITORIO</a>                                
                             </div>
                         </div>
                     </div>
                     <!-- Proyecto 4 -->
-                    <div class="tarjeta">
-                        <img src="assets/img/depto.jpg" alt="portafolioweb">
-                        <div class="card-body">
-                            <h5>Portafolio</h5>
-                            <p>Some quick example text to build on the card title and make up the bulk of the card's content</p>
-                            <div class="d-flex justify-content-around">
-                                <a href="#" target="_bank"><i class="fa-brands fa-github fa-2x text-white"></i></a>
-                                <a href="#" target="_bank"><i class="fa-solid fa-up-right-from-square fa-2x text-white"></i></a>
+                    <div class="col-lg-4 col-md-5 col-sm-8 tarjeta">
+                        <div class="tar-head">
+                            <div class="head-img">
+                                <img src="assets/img/depto.jpg" alt="portafolioweb">
+                            </div>
+                            <div class="head-proy">
+                                <i class="fa-solid fa-circle-info"></i>
+                                <div class="proy-titulo">
+                                    <h4>Proyecto</h4>
+                                    <h6>Tomás Caratti</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tar-body">
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente, odit aspernatur quod natus quaerat exercitationem.</p>
+                            <div class="repo-live">
+                                <a href="#" target="_bank"><i class="fa-solid fa-up-right-from-square"></i>LIVE DEMO</a>
+                                <a href="#" target="_bank"><i class="fa-brands fa-github"></i>REPOSITORIO</a>                                
                             </div>
                         </div>
                     </div>
@@ -357,65 +397,56 @@
 
         <!-- SECCIÓN Contacto -->
         <section id="contacto" class="contacto">
-            <div class="row m-0 p-0 container-fluid justify-content-around text-white">
-                <!-- Front End -->
-                <div class="col-lg-4 tema mensaje">
+            <div class="row m-0 p-0 container-fluid justify-content-around">
+                <!-- Contacto -->
+                <div class="col-lg-4 col-md-8 mensaje">
                     <h3 class="text-center">¡Contactame!</h3>
-                    <form novalidate="" id="contactForm" autocomplete="off" class="form">
-                        <div class="...">
-                            <label for="contactName"></label>
-                            <input id="contactName" name="contactName" type="text" placeholder="Nombre" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Utiliza únicamente letras y espacios en blanco." required=""class="form-control">
+                    <form novalidate="" id="contactFormulario" autocomplete="off" class="form">
+                        <div>
+                            <label for="contactoNombre"></label>
+                            <input id="contactoNombre" name="contactName" type="text" placeholder="Nombre" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required="" class="form-control">
                         </div>
-                        <div class="...">
-                            <label for="contactEmail"></label>
-                            <input id="contactEmail" name="contactEmail" type="email" placeholder="E-mail" pattern="^(\+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Introduce un correo electrónico válido." required=""class="form-control">
+                        <div>
+                            <label for="contactoEmail"></label>
+                            <input id="contactoEmail" name="contactEmail" type="email" placeholder="E-mail" pattern="^(\+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" required="" class="form-control">
                         </div>
-                        <div class="...">
-                            <label for="contactComment"></label>
-                            <textarea id="contactComment" name="contactComment" cols="30" rows="3" contactcomment=""placeholder="¡Dejame un mensaje!" required="" class="form-control" style="resize: none;"></textarea>
+                        <div>
+                            <label for="contactoAsunto"></label>
+                            <input id="contactoAsunto" name="contactoAsunto" type="text" placeholder="Asunto" pattern="[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" required="" class="form-control">
                         </div>
-                        <div class="text-center">                              
+                        <div>
+                            <label for="contactoComentario"></label>
+                            <textarea id="contactoComentario" name="contactoComentario" cols="30" rows="4" placeholder="¡Dejame un mensaje!" required="" class="form-control" style="resize: none;"></textarea>
+                        </div>
+                        <div class="text-center enviar">                              
                             <button type="submit" class="btn btn-primary">Enviar<i class="fa-solid fa-paper-plane icon-p"></i></button>
                         </div>
                     </form>
                 </div>
-                <!-- Back End -->
-                <div class="col-lg-3 tema social">
-                    <div class="menu-social">
-                        <h6 class="text-center">MENU</h6>
-                        <ul>
-                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">INICIO</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#acercade">ACERCA DE MÍ</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#curriculum">EDUCACIÓN</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#curriculum"></a>EXPERIENCIA</li>
-                            <li class="nav-item"><a class="nav-link" href="#habilidades">HABILIDADES</a></li>
-                            <li class="nav-item"><a class="nav-link" href="#proyectos">PROYECTOS</a></li>
-                        </ul>
-                    </div>
-                    <div class="redes-social">
-                        <h6 class="text-center">REDES SOCILES</h6>
-                        <div class="redes-sociales">
-                            <a href="https://github.com" target="_bank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://linkedin.com" target="_bank"><i class="fa-brands fa-linkedin"></i></a>
-                            <a href="https://instagram.com" target="_bank"><i class="fa-brands fa-instagram"></i></a>
-                            <a href="https://facebook.com" target="_bank"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://twitter.com" target="_bank"><i class="fa-brands fa-twitter"></i></a>
+                <!-- Datos & Lugar & Redes -->
+                <div class="col-lg-6 lugar">
+                    <div class="tema">
+                        <div class="tema-datos">
+                            <ul>
+                                <li><i class="fa-solid fa-phone"></i>260 4277 008</li>
+                                <li><i class="fa-solid fa-envelope"></i>tomircaratti@gmail.com</li>
+                                <li><i class="fa-sharp fa-solid fa-location-dot"></i>San Rafael, Mza.</li>
+                            </ul>
                         </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40123.36555796707!2d-68.35303347250145!3d-34.615357070351166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967907fdb13d06a7%3A0xe0fb2796d473309d!2sSan%20Rafael%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1677628812470!5m2!1ses!2sar" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                </div>
-                <!-- Soft Skills -->
-                <div class="col-lg-4 tema lugar">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d40123.36555796707!2d-68.35303347250145!3d-34.615357070351166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967907fdb13d06a7%3A0xe0fb2796d473309d!2sSan%20Rafael%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1677628812470!5m2!1ses!2sar" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    <ul>
-                        <li><i class="fa-solid fa-phone"></i> &nbsp; 260 4277 008</li>
-                        <li><i class="fa-solid fa-envelope"></i> &nbsp; tomircaratti@gmail.com</li>
-                        <li><i class="fa-sharp fa-solid fa-location-dot"></i> &nbsp; San Rafael, Mza.</li>
-                    </ul>
+                    <div class="redes-sociales">
+                        <a href="https://github.com" target="_bank"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://linkedin.com" target="_bank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://instagram.com" target="_bank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://facebook.com" target="_bank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com" target="_bank"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
                 </div>
             </div>
         </section>
-        <div class="container-fluid bg-black derechos">
-            <p class="text-white text-center "><i><span>&copy;</span>&nbsp;Todos los derechos reservados - 2023 - <span>Coded by</span> Tomás Caratti</i></p>
+        <div class="container-fluid bg-black derechos m-0 p-0">
+            <p class="text-white text-center m-0 py-2"><i><span>&copy;</span>&nbsp;Todos los derechos reservados - 2023 - <span>Coded by</span> Tomás Caratti</i></p>
         </div>
 
     </footer>
@@ -510,21 +541,7 @@
     <!-- FontAwesome JS File (Icon FIle) -->
     <script src="https://kit.fontawesome.com/094538ec34.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function(){
-            $("a").on('click', function(event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 700, function(){
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
-    </script>
+    <script>$(document).ready(function(){$("a").on('click', function(event){if (this.hash !== ""){event.preventDefault();var hash = this.hash;$('html, body').animate({scrollTop: $(hash).offset().top}, 700, function(){window.location.hash = hash;});}});});</script>
 
 </body>
 </html>
